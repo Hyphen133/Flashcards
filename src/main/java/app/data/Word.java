@@ -27,8 +27,6 @@ public class Word {
 	private String translatedWord;
 	@Column(name = "language")
 	private String language;
-	@Column(name = "image_path")
-	private String imagePath;
 	@OneToMany(cascade=CascadeType.ALL, mappedBy = "word")
 	private List<Association> associations;
 	@OneToMany(cascade=CascadeType.ALL, mappedBy = "word")

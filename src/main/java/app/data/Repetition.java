@@ -24,8 +24,6 @@ public class Repetition {
     private LocalDateTime date;
     @Column(name = "successRate")
     private double successRate;
-    @Enumerated(EnumType.STRING)
-    private DifficultyLevel difficultyLevel;
     @ManyToOne
     @JoinColumn(name = "fk_word_id")
     private Word word;
