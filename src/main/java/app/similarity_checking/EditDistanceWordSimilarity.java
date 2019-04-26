@@ -12,7 +12,7 @@ public class EditDistanceWordSimilarity implements WordSimilarity {
         int distanceThreshold = 10;
 
         if(editDistance<distanceThreshold){
-            return (distanceThreshold-editDistance)/10.0;
+            return (distanceThreshold-editDistance)/((double)(distanceThreshold));
         }else{
             return 0;
         }
