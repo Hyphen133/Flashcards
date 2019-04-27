@@ -1,18 +1,15 @@
 package app;
 
 import app.config.Config;
-import app.data.Word;
+import app.config.SampleDataLoader;
 import app.repetition_algorithm.MainWordsSelector;
 import app.repetition_algorithm.NewWordsSelector;
 import app.repetition_algorithm.ThresholdedSpacedRepetitionAlgorithm;
 import app.repositories.ReviewAlgorithmRepository;
-import app.config.SampleDataLoader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.List;
 
 
 @SpringBootApplication
@@ -35,6 +32,7 @@ public class App implements CommandLineRunner {
 
     @Autowired
     Config config;
+
 
     public static void main(String[] args){
 //        https://www.baeldung.com/spring-boot-sqlite
